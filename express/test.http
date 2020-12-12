@@ -1,0 +1,28 @@
+@uri=http://localhost:3000
+
+### 获取产品接口
+GET {{uri}}/products
+
+### 通过id 获取产品
+GET {{uri}}/products/5fd4dfbd453d461a9ca7b3f3
+
+### 添加产品
+POST {{uri}}/products
+Content-Type: application/json
+
+// 注意这里一定要有一个空行
+{
+    "title": "产品5"
+}
+
+###  通过 id 改变产品的某些信息
+PUT {{uri}}/products/5fd4e6d59cec98209c5e94e1
+Content-Type: application/json
+
+// 注意这里一定要有一个空行
+{
+    "title": "产品5"
+}
+
+### 通过 id 改变产品的某些信息
+DELETE  {{uri}}/products/5fd4e7059cec98209c5e94e2

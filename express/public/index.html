@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>static file</title>
+</head>
+
+<body>
+    <h1> app.use(express.static('文件夹')) </h1>
+    <p> 在挂载的文件加下面的所有资源是可以在路径中访问到的 </p>
+    <p> 比如 localhost:3000/index.html </p>
+    <p> 比如 localhost:3000/demo.html </p>
+
+    <script>
+        fetch('http://localhost:3000/about').then(res => res.json()).then(res => {
+            console.log(res);
+        })
+    </script>
+
+</body>
+
+</html>
